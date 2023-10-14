@@ -16,11 +16,14 @@ class SpringCoreApplicationTests {
 	public static void main(String[] args) {
 		ApplicationContext context = run(SpringCoreApplication.class, args);
 
-		ComponentTest bean = context.getBean(ComponentTest.class);
-		bean.print();
+		ComponentTest componentTest = context.getBean(ComponentTest.class);
+		componentTest.print();
 
-		DependencyInjectionTest test = context.getBean(DependencyInjectionTest.class);
-		test.print();
+		DependencyInjectionTest dependencyInjectionTest = context.getBean(DependencyInjectionTest.class);
+		dependencyInjectionTest.print();
+
+		BeanLifecycleTest beanLifecycleTest = context.getBean(BeanLifecycleTest.class);
+		beanLifecycleTest.print();
 	}
 
 }
