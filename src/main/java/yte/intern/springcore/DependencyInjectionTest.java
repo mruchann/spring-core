@@ -2,6 +2,9 @@ package yte.intern.springcore;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import yte.intern.springcore.injection.ConstructorInjection;
+import yte.intern.springcore.injection.FieldInjection;
+import yte.intern.springcore.injection.SetterInjection;
 
 @Component
 public class DependencyInjectionTest {
